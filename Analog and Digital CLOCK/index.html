@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONAI Analog and Digital CLOCK</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock c1">
+
+            <div class="circle1" id="second" style="--clr:rgb(86, 249, 11);"><i></i></div>
+            <div class="circle1 circle2 " id="minute" style="--clr: rgb(244, 252, 8);"><i></i></div>
+            <div class="circle1 circle3 " id="hour" style="--clr: rgb(249, 11, 11);"><i></i></div>
+            <div class="circle4 "><i></i></div>
+
+
+            <span style="--i:1;"><b>1</b></span>
+            <span style="--i:2;"><b>2</b></span>
+            <span style="--i:3;"><b>3</b></span>
+            <span style="--i:4;"><b>4</b></span>
+            <span style="--i:5;"><b>5</b></span>
+            <span style="--i:6;"><b>6</b></span>
+            <span style="--i:7;"><b>7</b></span>
+            <span style="--i:8;"><b>8</b></span>
+            <span style="--i:9;"><b>9</b></span>
+            <span style="--i:10;"><b>10</b></span>
+            <span style="--i:11;"><b>11</b></span>
+            <span style="--i:12;"><b>12</b></span>
+        </div>
+
+
+        <!-- Digital Part -->
+        <div id="Time">
+            <div id="Hours"  style="--clr: rgb(249, 11, 11);">00</div>
+            <div id="Minutes" style="--clr: rgb(244, 252, 8);">00</div>
+            <div id="Seconds" style="--clr: rgb(86, 249, 11);">00</div>
+            <div id="AM_PM">AM</div>
+        </div>
+
+        
+
+        <div style="padding-top: 20px">
+        <marquee behavior="" direction="left" style="font-size: 30px; color: rgb(255, 0, 191); border: 1px solid aqua; border-radius: 20px; box-shadow: inset 3px 3px 12px rgba(251, 251, 251, 0.523), inset -5px -5px 15px rgb(35, 35, 42); width: 340px;">Analog & Digital CLOCK</marquee>
+        </div>
+
+    </div>
+
+ 
+    <div  id ="Profiles" style="display: grid; padding-left: 200px; padding-top: 400px;">
+        <div style="display: flex; padding-left: 120px;">
+        <div id="MadeBy">Made By</div>
+        <!-- <div style="font-size: xx-large; color: aliceblue; align-items: center; justify-content: center; display: flex; font-weight: bolder;"> &nbsp;&nbsp;:</div> -->
+        </div>
+
+        <div style="display: flex; padding-top: 30px; padding-bottom: 30px;">
+            <image src="Photos/Soubhagya Majumdar (Photo).jpg" style="width: 110px; height: 110px; border-radius: 50%; box-shadow: inset 0 0 10px rgb(13, 248, 248), 0 0 5px rgb(13, 248, 248), 0 0 10px rgb(13, 248, 248), inset 5px 5px 15px rgba(251, 251, 251, 0.523),  inset -5px -5px 15px rgba(0, 0, 0, 0.75);"></image>
+            <div style="padding: 20px; color: aqua; padding-top: 20px; font-size: 30px; display: grid">Soubhagya Majumdar (CSE)
+            <div id="RollNo" >11900123137</div>
+           </div>
+        </div>
+
+        <div style="padding-left: 270px; color: aqua;">
+        <audio controls loop src="Music/GoodFellings.mp3"></audio>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
