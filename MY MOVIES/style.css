@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url(Assets/Images/Netflix-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 80vh;
+    position: relative; 
+}
+
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.54;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav{
+    padding: 50px;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    display: flex; 
+    align-items: center;
+    height: 62px;
+}
+
+nav img{
+    width: 250px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.intro{
+    color: rgb(255, 255, 255);
+    height: calc(100% - 162px);
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 15px;
+    padding: 0 30px;
+    text-align: center;
+
+}
+
+.intro> :first-child{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.intro> :nth-child(2){
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.separation{
+    height: 3px;
+    background-color: rgb(2, 134, 114);
+}
+
+.btn{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 3px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-SignIn{
+    color: black;
+    background-color:rgb(0, 255, 247);
+}
+
+.btn-GetStarted{
+    color: black;
+    background-color: rgb(0, 255, 247);
+    padding: 5px 30px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.main input{
+    background-color: rgb(1, 19, 22);
+    color: rgb(0, 255, 242);
+    padding: 5px 30px;
+    font-size: 16px;
+    background-color: rgba(23, 23, 23, 0.3);
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid;
+}
+
+section{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.first{
+    display: flex;
+    color: white;
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.secImg{
+    padding-top: 3px;
+    position: relative;
+}
+
+.secImg video{
+    height: 225px;
+    position: absolute;
+    top: 51px;
+    right:0;
+}
+
+.secImg img{
+    width: 455px;
+    position: relative;
+    z-index: 10;
+    
+}
+
+section.first > div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+section.first > div :first-child{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+section.first > div :nth-child(2)
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.FaQ{
+    background-color: black;
+    padding: 50px;
+}
+
+.FaQ h2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.FaQbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(26, 33, 33);
+    color: cyan;
+    padding: 20px;
+    max-width: 100vh;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.FaQbox:hover{
+    background-color: rgb(41, 56, 56);  
+}
+
+footer{
+    margin: auto;
+    max-width: 60vw;
+    padding: 60px;
+    color: azure;
+}
+
+footer span{
+    color: white;
+    font-size: 24px;
+}
+
+.footer{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.footer a{
+    font-size: 15px;
+    color: aquamarine;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media screen and (max-width: 788px) {
+    .first{
+        flex-wrap: wrap;
+    }
+
+    section.first > div :first-child{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+    section.first > div :nth-child(2)
+    {
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+}
